@@ -9,7 +9,6 @@ export const zhSidebar = sidebar({
       prefix: "zh/posts/",
       children: "structure",
     },
-    "艾因的简介",
     "slides",
   ],
 });

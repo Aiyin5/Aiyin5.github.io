@@ -3,7 +3,7 @@ import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://aiyin5.github.io",
   navbarLayout: {
       left: ["Brand"],
       center: ["Language"],
@@ -17,7 +17,7 @@ export default hopeTheme({
   },
   author: {
     name: "艾因",
-    url: "https://mrhope.site",
+    url: "https://aiyin.xyz",
   },
 
   iconAssets: "iconfont",
