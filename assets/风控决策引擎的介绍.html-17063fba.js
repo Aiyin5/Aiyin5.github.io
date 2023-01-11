@@ -1,0 +1,1 @@
+import{_,V as t,W as a,X as e,Y as c}from"./framework-63920800.js";const r={},s=e("h1",{id:"风控决策引擎的介绍",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#风控决策引擎的介绍","aria-hidden":"true"},"#"),c(" 风控决策引擎的介绍")],-1),o=[s];function n(d,i){return t(),a("div",null,o)}const l=_(r,[["render",n],["__file","风控决策引擎的介绍.html.vue"]]);export{l as default};
