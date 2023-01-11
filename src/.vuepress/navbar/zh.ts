@@ -75,7 +75,7 @@ export const zhNavbar = navbar([
       {
         text: "算法",
         icon: "edit",
-        prefix: "算法",
+        prefix: "/算法",
         children: [
           { text: "图论整理", icon: "edit", link: "/图论整理" },
           { text: "二分搜索边界判断", icon: "edit", link: "/二分搜索边界判断" },
@@ -85,7 +85,7 @@ export const zhNavbar = navbar([
       {
         text: "后端",
         icon: "edit",
-        prefix: "后端",
+        prefix: "/后端",
         children: [
           { text: "java基础", icon: "edit", link: "/java基础" },
           { text: "数据库", icon: "edit", link: "/数据库" },
@@ -94,6 +94,12 @@ export const zhNavbar = navbar([
           { text: "知识链接", icon: "edit", link: "/知识链接" },
         ],
       },
+    ],
+  },
+  { text: "文章翻译", icon: "edit",
+    prefix: "/zh/posts/文章翻译",
+    children: [
+      { text: "K8s模式", icon: "edit", link: "/K8s模式/K8s模式设计" },
     ],
   },
   { text: "关于", icon: "discover", link: "/about/About" },

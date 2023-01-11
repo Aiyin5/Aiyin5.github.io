@@ -17,7 +17,7 @@ export default hopeTheme({
   },
   author: {
     name: "艾因",
-    url: "https://aiyin.xyz",
+    url: "https://www.aiyin.xyz",
   },
 
   iconAssets: "iconfont",
@@ -33,13 +33,10 @@ export default hopeTheme({
   blog: {
     avatar: "/logo.png",
     medias: {
-      BiliBili: "https://example.com",
+      BiliBili: "https://space.bilibili.com/1320188",
       Email: "https://example.com",
-      Gitee: "https://example.com",
       GitHub: "https://github.com/Aiyin5/",
-      Gitlab: "https://example.com",
       Linkedin: "https://www.linkedin.cn/in/junkuiqiu",
-      Zhihu: "https://example.com",
       LeetCode:"https://leetcode.cn/u/aiyin-v/",
     },
   },
@@ -55,7 +52,7 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
+      footer: '<a href="/about/About">关于网站</a>',
 
       displayFooter: true,
 
