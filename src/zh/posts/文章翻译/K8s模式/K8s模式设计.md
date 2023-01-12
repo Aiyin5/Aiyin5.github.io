@@ -1,10 +1,24 @@
+---
+title: K8s模式翻译
+icon: page
+order: 1
+author: AiYin
+date: 2023-01-10
+category:
+  - 翻译
+  - 技术
+tag:
+  - 目录
+sticky: true
+---
+
 # K8s模式翻译
 
 ## 目录
 
 ### 第一章：k8S简介
 
-#### [K8s的基本简介](K8s简介/第一部分K8s简介)
+#### [K8s的基本简介](K8s的简介/第一部分K8s简介)
 
 ### 第二章：K8s 基础模式
 

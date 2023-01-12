@@ -1,10 +1,22 @@
-### 2.5 Automated Placement  自动化布局（Pod的放置）
+---
+icon: page
+date: 2023-01-05
+order: 6
+category:
+  - 技术
+  - K8s
+tag:
+  - 翻译
+---
+
+# 基础模式 自动化布局
+## 2.5 Automated Placement  自动化布局（Pod的放置）
 
 Automated Placement is the core function of the Kubernetes scheduler for assigning new Pods to nodes satisfying container resource requests and honoring scheduling policies. This pattern describes the principles of Kubernetes’ scheduling algorithm and the way to influence the placement decisions from the outside.
 
 自动化放置（分配？调度）是Kubernetes调度器的核心功能，用于将新POD分配给满足容器资源请求的节点，并遵守调度策略。该模式描述了Kubernetes调度算法的原理以及从外部影响布局决策的方式。
 
-#### 2.5.1 Problem  问题
+### 2.5.1 Problem  问题
 
 A reasonably sized microservices-based system consists of tens or even hundreds of isolated processes. Containers and Pods do provide nice abstractions for packaging and deployment but do not solve the problem of placing these processes on suitable nodes. With a large and ever-growing number of microservices, assigning and placing them individually to nodes is not a manageable activity.
 
@@ -14,7 +26,7 @@ Containers have dependencies among themselves, dependencies to nodes, and resour
 
 容器之间有依赖关系、对节点的依赖关系和资源需求，所有这些都会随着时间的推移而变化。集群上可用的资源也会随着时间的推移而变化，通过收缩或扩展集群，或者让已经放置的容器消耗集群。我们放置容器的方式也会影响分布式系统的可用性、性能和容量。所有这些都使得将容器调度到节点这一过程中的目标，必须在进行中完成。
 
-#### 2.5.2 Solution   解决方案
+### 2.5.2 Solution   解决方案
 
 In Kubernetes, assigning Pods to nodes is done by the scheduler. It is an area that is highly configurable, still evolving, and changing rapidly as of this writing. In this chapter, we cover the main scheduling control mechanisms, driving forces that affect the placement, why to choose one or the other option, and the resulting consequences. The Kubernetes scheduler is a potent and time-saving tool.It plays a fundamental role in the Kubernetes platform as a whole, but similarly to other Kubernetes components (API Server, Kubelet), it can be run in isolation or not used at all.
 
@@ -24,7 +36,7 @@ At a very high level, the main operation the Kubernetes scheduler performs is to
 
 在很高的层面上来说，Kubernetes调度器执行的主要操作是从API服务器中检索每个新创建的Pod定义，并将其分配到节点上。它为每个Pod找到一个合适的节点（只要有这样一个节点），无论是用于初始应用程序放置、扩展，还是将应用程序从不健康的节点移动到更健康的节点。它通过考虑运行时依赖关系、资源需求和高可用性指导策略、水平分布pod以及将pod集中在附近以实现性能和低延迟交互来实现这一点。但是，为了让调度器正确地执行其工作并允许声明式放置，它需要具有可用容量的节点，以及具有声明的资源配置文件和指导策略的容器。让我们更详细地了解其中的每一项。
 
-##### 2.5.2.1 Available Node Resources   可用节点资源
+#### 2.5.2.1 Available Node Resources   可用节点资源
 
 First of all, the Kubernetes cluster needs to have nodes with enough resource capacity to run new Pods. Every node has capacity available for running Pods, and the scheduler ensures that the sum of the resources requested for a Pod is less than the available allocatable node capacity. Considering a node dedicated only to Kubernetes, its capacity is calculated using the formula in Example 6-1.
 
@@ -47,13 +59,13 @@ A workaround for this limitation is to run a placeholder Pod that doesn’t do a
 
 为了解决上面说的这个问题，可用通过运行一个占位符Pod来实现，它不做任何事情，只是请求与那些未跟踪（不属于K8s的）容器资源使用量相对应的CPU和内存的资源。创建这样的Pod只是为了表示和保留未跟踪容器的资源消耗，并帮助调度器构建更好的节点资源模型。
 
-##### 2.5.2.2 Container Resource Demands  容器资源声明
+#### 2.5.2.2 Container Resource Demands  容器资源声明
 
 Another important requirement for an efficient Pod placement is that containers have their runtime dependencies and resource demands defined. We covered that in more detail in Chapter 2, Predictable Demands. It boils down to having containers that declare their resource profiles (with request and limit) and environment dependencies such as storage or ports. Only then are Pods sensibly assigned to nodes and can run without affecting each other during peak times.
 
 有效放置Pod的另一个重要要求，是容器定义了其运行时依赖项和资源需求。我们在本章第1节“可预测需求”中更详细地介绍了这一点。它归结为具有声明其资源配置文件（带有请求和限制）和环境依赖项（如存储或端口）的容器。只有这样，POD才能合理地分配给节点，并且在高峰时间运行时不会相互影响。
 
-##### 2.5.2.3 Placement Policies  放置策略
+#### 2.5.2.3 Placement Policies  放置策略
 
 The last piece of the puzzle is having the right filtering or priority policies for your specific application needs. The scheduler has a default set of predicate and priority policies configured that is good enough for most use cases. It can be overridden during scheduler startup with a different set of policies, as shown in Example 6-2.
 
@@ -95,7 +107,7 @@ Consider that in addition to configuring the policies of the default scheduler, 
 
 考虑到除了配置默认调度器的策略外，还可以运行多个调度器，并允许POD指定放置它们的调度器。可以通过不同的命名来启动另一个配置不同的调度程序实例。然后在定义Pod时，只需将带有自定义调度程序名称的.spec.schedulerName字段添加到Pod规范中，Pod将仅由自定义调度程序拾取。
 
-##### 2.5.2.4 Scheduling Process  调度进程
+#### 2.5.2.4 Scheduling Process  调度进程
 
 Pods get assigned to nodes with certain capacities based on placement policies. For completeness, Figure 6-1 visualizes at a high level how these elements get together and the main steps a Pod goes through when being scheduled.
 
@@ -133,7 +145,7 @@ In addition to specifying custom labels to your nodes, you can use some of the d
 
 除了为节点指定自定义标签外，还可以使用每个节点上存在的一些默认标签。每个节点都有一个唯一的kubernetes.io/host name标签，可用于根据其主机名在节点上放置Pod。指示操作系统、体系结构和实例类型的其他默认标签对于放置Pod也是很有用的。
 
-##### 2.5.2.5 Node Affinity  节点关联(亲和性)
+#### 2.5.2.5 Node Affinity  节点关联(亲和性)
 
 Kubernetes supports many more flexible ways to configure the scheduling processes.One such a feature is node affinity, which is a generalization of the node selector approach described previously that allows specifying rules as either required or preferred. Required rules must be met for a Pod to be scheduled to a node, whereas preferred rules only imply preference by increasing the weight for the matching nodes without making them mandatory. Besides, the node affinity feature greatly expands the types of constraints you can express by making the language more expressive with operators such as In, NotIn, Exists, DoesNotExist, Gt, or Lt. Example 6-4 demonstrates how node affinity is declared.
 
@@ -171,7 +183,7 @@ containers:
   name: random-generator
 ```
 
-##### 2.5.2.6 Pod Affinity and Antiaffinity   Pod关联（亲和）与反关联（为了保持和Node Affinity 一致）
+#### 2.5.2.6 Pod Affinity and Antiaffinity   Pod关联（亲和）与反关联（为了保持和Node Affinity 一致）
 
 Node affinity is a more powerful way of scheduling and should be preferred when `nodeSelector` is not enough. This mechanism allows constraining which nodes a Pod can run based on label or field matching. It doesn’t allow expressing dependencies among Pods to dictate where a Pod should be placed relative to other Pods. To express how Pods should be spread to achieve high availability, or be packed and colocated together to improve latency, Pod affinity and antiaffinity can be used.
 
@@ -218,7 +230,7 @@ Similar to node affinity, there are hard and soft requirements for Pod affinity 
 
 与节点关联类似，Pod关联和反关联性也有硬需求和软需求，分别称为_requiredDuringSchedulingIgnoredDuringExecution_和_PreferredDuringSchedulingIgnoredDuringExecution_。同样，与节点关联一样，字段名中也有_IgnoredDuringExecution_后缀，它的存在是为了将来的扩展性。此时，如果节点上的标签更改，并且关联规则不再有效，则POD将继续运行，但在将来的运行时，也可能会考虑更改。
 
-##### 2.5.2.7 Taints and Tolerations    污点（具体是指节点的特征，感觉是个标签一样的）和容忍
+#### 2.5.2.7 Taints and Tolerations    污点（具体是指节点的特征，感觉是个标签一样的）和容忍
 
 A more advanced feature that controls where Pods can be scheduled and are allowed to run is based on taints and tolerations. While node affinity is a property of Pods that allows them to choose nodes, taints and tolerations are the opposite. They allow the nodes to control which Pods should or should not be scheduled on them. A taint is a characteristic of the node, and when it is present, it prevents Pods from scheduling onto the node unless the Pod has toleration for the taint. In that sense, taints and tolerations can be considered as an opt-in to allow scheduling on nodes, which by default are not available for scheduling, whereas affinity rules are an opt-out by explicitly selecting on which nodes to run and thus exclude all the nonselected nodes.
 
@@ -321,7 +333,7 @@ Regardless of the policy used, the descheduler avoids evicting the following:
 Of course, all evictions respect Pods’ QoS levels by choosing Best-Efforts Pods first, then Burstable Pods, and finally Guaranteed Pods as candidates for eviction. See Chapter 2, Predictable Demands for a detailed explanation of these QoS levels.
 
 当然，所有迁出都尊重POD的QoS级别，首先选择Best-Efforts的POD，然后选择Burstable POD，最后选择Guaranteed 的POD作为迁出的候选POD。有关这些QoS级别的详细说明，请参见第2章第1节中的“可预测需求”。
-#### 2.5.3 Discussion  讨论
+### 2.5.3 Discussion  讨论
 
 Placement is an area where you want to have as minimal intervention as possible. If you follow the guidelines from Chapter 2, Predictable Demands and declare all the resource needs of a container, the scheduler will do its job and place the Pod on the most suitable node possible. However, when that is not enough, there are multiple ways to steer the scheduler toward the desired deployment topology. To sum up, from simpler to more complex, the following approaches control Pod scheduling (keep in mind, as of this writing, this list changes with every other release of Kubernetes):
 
