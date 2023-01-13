@@ -132,7 +132,7 @@ Vector底层也是动态数组实现的，同样是实现了List接口，和Arra
 
 LinkedList底层实现方式是双向链表，一个双向链表的节点有三个整数值: 数值、向后的节点链接、向前的节点链接。
 
-<img src="C:\Users\80307331\Desktop\books\10-精简知识\尝试整合\LinkedList.png" alt="img" style="zoom:67%;" />
+图片暂缺
 
 LinkedList 实现了 Queue、List、Deque、Cloneable 接口，可作为队列、列表的相关操作，同时可实现克隆。
 
@@ -258,7 +258,7 @@ HashMap 基于 Hash 算法实现的
 >
 > 一个 ConcurrentHashMap 里包含一个 Segment 数组。Segment 的结构和HashMap类似，是一种数组和链表结构，一个 Segment 包含一个 HashEntry 数组，每个 HashEntry 是一个链表结构的元素，每个 Segment 守护着一个HashEntry数组里的元素，当对 HashEntry 数组的数据进行修改时，必须首先获得对应的 Segment的锁。
 >
-> ![img](C:\Users\80307331\Desktop\books\10-精简知识\尝试整合\CocurrentHashMap1.7,png)
+> 图片暂缺
 >
 > + 该类包含两个静态内部类 HashEntry 和 Segment ；前者用来封装映射表的键值对，后者用来充当锁的角色；
 > + Segment 是一种可重入的锁 ReentrantLock，每个 Segment 守护一个HashEntry 数组里得元素，当对 HashEntry 数组的数据进行修改时，必须首先获得对应的 Segment 锁。
@@ -269,7 +269,7 @@ HashMap 基于 Hash 算法实现的
 >
 > 结构如下：
 >
-> ![img](C:\Users\80307331\Desktop\books\10-精简知识\尝试整合\CocurrentHashMap1.8,png)
+> 图片暂缺
 >
 >
 >
@@ -280,7 +280,7 @@ LinkedHashMap是将HashMap和双向链表结合在了一起。即每个节点包
 
 下面是LinkedHashMap的结构图。使用的不是特别多，如果你想要一个能存储插入顺序的HashMap，可以考虑，其他就不过多介绍了。
 
-![Linkedhashmap](C:\Users\80307331\Desktop\books\10-精简知识\尝试整合\Linkedhashmap) 
+图片暂缺
 
 
 ## IO流

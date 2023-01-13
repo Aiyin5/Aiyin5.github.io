@@ -13,5 +13,8 @@ breadcrumb: false
 
 - [**Aiyin 的个人博客**](https://github.com/Aiyin5/personalIndex.git)
 
-## 免责声明
+## 关于艾因
 
+[关于艾因](/zh/posts/关于艾因/关于艾因)
+
+## 免责声明
