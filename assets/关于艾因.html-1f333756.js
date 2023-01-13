@@ -1,1 +1,0 @@
-import{_ as t,V as a,W as _,X as e,Y as c}from"./framework-b9ac5585.js";const r={},s=e("h1",{id:"关于艾因",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#关于艾因","aria-hidden":"true"},"#"),c(" 关于艾因")],-1),o=[s];function n(d,i){return a(),_("div",null,o)}const l=t(r,[["render",n],["__file","关于艾因.html.vue"]]);export{l as default};
