@@ -21,12 +21,10 @@ tag:
 本节里面的图使用的是UML图，可以通过知乎上的一篇文章（[30分钟学会UML](https://zhuanlan.zhihu.com/p/109655171)）对UML有一个了解。
 
 其中关系图如下：
-
-![img](C:\Users\80307331\Desktop\books\10-精简知识\尝试整合\UML关系.jpg)
+图片暂缺
 
 ### 集合框架
-
-![img](C:\Users\80307331\Desktop\books\10-精简知识\尝试整合\集合框架.gif)
+图片暂缺
 
 Java 集合框架主要包括两种类型的容器，一种是集合（Collelection），存储一个元素集合，另一种是图（Map），存储键/值对映射。Collection 接口又有 3 种子类型，List、Set 和 Queue，再下面是一些抽象类，最后是具体实现类，常用的有 ArrayList、LinkedList、HashSet、LinkedHashSet、HashMap、LinkedHashMap 等等。
 
@@ -78,7 +76,7 @@ while(it.hasNext()){
 
 ### Collelection
 
-![image-20211013144247637](C:\Users\80307331\Desktop\books\10-精简知识\尝试整合\Collection,png)
+图片暂缺
 
 Collection集合的子接口有Set、List、Queue三种子接口，其中Queue是队列，不详细介绍。
 
@@ -218,7 +216,7 @@ LinkedHashSet是介于HashSet 和 TreeSet之间，内部是一个双向链表结
 
 ### Map
 
-![image-20211013144423822](C:\Users\80307331\AppData\Roaming\Typora\typora-user-images\image-20211013144423822.png)
+图片暂缺
 
 #### HashMap
 
