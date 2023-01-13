@@ -6,7 +6,7 @@ export const zhNavbar = navbar([
     children: [
       { text: "关于艾因", icon: "edit", link: "/关于艾因" },
       { text: "生活体验", icon: "edit",
-        prefix: "生活体验",
+        prefix: "/生活体验",
         children: [
           { text: "上海", icon: "edit", link: "/上海" },
           { text: "杭州", icon: "edit", link: "/杭州" },
@@ -16,7 +16,7 @@ export const zhNavbar = navbar([
       {
         text: "关于厨师",
         icon: "edit",
-        prefix: "关于厨师",
+        prefix: "/关于厨师/",
         children: [
           {
             text: "艾因家的菜",
@@ -36,7 +36,7 @@ export const zhNavbar = navbar([
         ],
       },
       { text: "视野", icon: "edit",
-        prefix: "视野",
+        prefix: "/视野/",
         children: [
           {
             text: "tobeContinue",
