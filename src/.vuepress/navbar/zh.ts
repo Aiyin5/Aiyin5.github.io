@@ -46,7 +46,7 @@ export const zhNavbar = navbar([
         ],},
     ] },
   {
-    text: "项目相关",
+    text: "项目",
     icon: "edit",
     prefix: "/zh/posts/项目相关/",
     children: [
@@ -68,7 +68,7 @@ export const zhNavbar = navbar([
     ],
   },
   {
-    text: "技术相关",
+    text: "技术",
     icon: "edit",
     prefix: "/zh/posts/关于技术",
     children: [

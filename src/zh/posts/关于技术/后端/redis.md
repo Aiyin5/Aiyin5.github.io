@@ -1,16 +1,15 @@
 ---
 icon: edit
-date: 2022-01-05
+date: 2023-01-05
+order: 3
+author: AiYin
 category:
-  - 香蕉
-  - 水果
+  - 技术
+  - 后端
 tag:
-  - 黄
-  - 弯曲的
-  - 长
+  - redis
 ---
-
-# 香蕉 1
+# Redis相关
 
 ## 标题 2
 
