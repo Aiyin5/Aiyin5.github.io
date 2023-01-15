@@ -103,4 +103,5 @@ export const zhNavbar = navbar([
     ],
   },
   { text: "关于", icon: "discover", link: "/about/About" },
+  { text: "测试", icon: "discover", link: "/test/test" }
 ]);

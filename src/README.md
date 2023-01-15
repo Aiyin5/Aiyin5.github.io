@@ -5,7 +5,7 @@ layout: BlogHome
 icon: home
 title: 主页
 #heroImage: /logo.png
-heroText: false  
+heroText: false
 tagline:  
 heroFullScreen: true
 projects:
