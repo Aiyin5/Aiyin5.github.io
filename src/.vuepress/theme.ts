@@ -17,14 +17,14 @@ export default hopeTheme({
   },
   author: {
     name: "艾因",
-    url: "https://www.aiyin.xyz",
+    url: "http://www.aiyin.xyz",
   },
 
   iconAssets: "iconfont",
 
   logo: "/logo.png",
 
-  repo: "https://github.com/Aiyin5/personalIndex.git",
+  repo: "https://github.com/Aiyin5/Aiyin5.github.io",
 
   docsDir: "docs",
 
@@ -34,9 +34,8 @@ export default hopeTheme({
     avatar: "/logo.png",
     medias: {
       BiliBili: "https://space.bilibili.com/1320188",
-      Email: "https://example.com",
       GitHub: "https://github.com/Aiyin5/",
-      Linkedin: "https://www.linkedin.cn/in/junkuiqiu",
+      Linkedin: "https://www.linkedin.com/in/junkuiqiu",
       LeetCode:"https://leetcode.cn/u/aiyin-v/",
     },
   },

@@ -12,7 +12,7 @@ projects:
   - icon: /logo.png
     name: Index
     desc: 个人主页
-    link: https://www.aiyin.xyz
+    link: http://www.aiyin.xyz
 
   - icon: link
     name: LinkedIn
