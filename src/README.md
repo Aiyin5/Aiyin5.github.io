@@ -1,6 +1,10 @@
 ---
 home: true
 bgImage: test.gif
+bgImageStyle: {
+  width:100%,
+  height:40%
+}
 layout: BlogHome
 icon: home
 title: 主页
