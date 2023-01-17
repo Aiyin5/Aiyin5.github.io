@@ -35,7 +35,7 @@ star: 5
 以freebe的前端代码自动化部署为例。
 在项目目录.github/workflows下添加git action流程文件ci.yaml
 其中DOCKER_USERNAME、DOCKER_PASSWORD可以在github项目的setting下Secrets创建对应的密钥。
-```
+```yaml
 name: GitHub Actions Build and Deploy Demo
 on:
   push:
@@ -82,7 +82,7 @@ jobs:
 ```
 其中的部署镜像脚本depoy.sh需要放置在腾讯云中，参考内容如下：
 其中xxx/freebe 为对应的dockerHub仓库镜像
-```
+```sh
 echo -e "---------docker Login--------"
 docker login --username=$1  --password=$2
 echo -e "---------docker Stop--------"
@@ -98,7 +98,7 @@ echo -e "---------deploy Success--------"
 
 ```
 项目的根目录下需要添加DockerFile，参考内容如下：
-```
+```sh
 FROM nginx
 COPY ./out /usr/share/nginx/html
 EXPOSE 80

@@ -1,17 +1,13 @@
 ---
 home: true
-bgImage: test2.gif
-bgImageStyle: {
-  width: 100%,
-  height: 60%
-}
+bgImage: test.gif
 layout: BlogHome
 icon: home
 title: 主页
 #heroImage: /logo.png
 heroText: false
 tagline:  
-heroFullScreen: false
+heroFullScreen: true
 projects:
   - icon: /logo.png
     name: Index
