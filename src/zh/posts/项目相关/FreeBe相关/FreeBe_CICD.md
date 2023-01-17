@@ -6,11 +6,12 @@ category:
 tag:
   - freebe
   - CICD
+star: 5
 ---
 # 关于FreeBe的项目的CICD方案
 为了方便开发、测试和运维，这边建议采用两套服务器搭建开发环境和测试环境，采用GitHub作为代码托管，SonarCloud进行代码质量控制，DockerHub作为镜像托管，Git Action作为流水线控制，腾讯云作为服务器。
 具体的流程如下面的流程图
-<iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;margin-left:10px; margin-top:10px;width:800px; height:400px;" src="https://www.processon.com/embed/63bff214261f1c5cc7947101"></iframe>
+<iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;margin-left:10px; margin-top:10px;width:100%; height:400px;" src="https://www.processon.com/embed/63bff214261f1c5cc7947101"></iframe>
 
 ## 自动化部署流程
 ### 开发环境的自动化部署
@@ -55,23 +56,23 @@ jobs:
       - name: Log in to Docker Hub  //登录dockerHub
         uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}    	//dockerHub的用户名
-          password: ${{ secrets.DOCKER_PASSWORD }}    	//dockerHub的密码
+          username: ${{ secrets.DOCKER_USERNAME }}        //dockerHub的用户名
+          password: ${{ secrets.DOCKER_PASSWORD }}        //dockerHub的密码
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
-          images: xxx/freebe        			      //dockerHub中的仓库名称
+          images: xxx/freebe                          //dockerHub中的仓库名称
 
-      - name: Build and push Docker image   		//创建docker镜像
+      - name: Build and push Docker image           //创建docker镜像
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
           context: .
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-      - name: ssh docker login   				//登录腾讯云及部署镜像
+      - name: ssh docker login                   //登录腾讯云及部署镜像
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.TENCENT_CLOUD_IP }}

@@ -9,6 +9,7 @@ category:
   - 技术
 tag:
   - 目录
+star: 10
 sticky: true
 ---
 
