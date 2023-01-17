@@ -73,6 +73,14 @@ export const zhNavbar = navbar([
     prefix: "/zh/posts/关于技术",
     children: [
       {
+        text: "题解",
+        icon: "edit",
+        prefix: "/LeetCode题解",
+        children: [
+          {text: "LeetCode题解", icon: "edit", link: "/LeetCode题解"},
+        ],
+      },
+      {
         text: "算法",
         icon: "edit",
         prefix: "/算法",

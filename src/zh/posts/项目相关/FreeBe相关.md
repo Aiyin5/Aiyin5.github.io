@@ -4,9 +4,7 @@ date: 2023-01-09
 category:
   - 项目
 tag:
-  - red
-  - small
-  - round
+  - freebe
 ---
 
 # FreeBe相关
