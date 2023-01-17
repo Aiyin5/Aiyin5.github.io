@@ -12,8 +12,8 @@ breadcrumb: false
 
 ## 仓库链接
 
-- [**Aiyin 的个人博客**](https://github.com/Aiyin5/personalIndex.git)
-- [**Aiyin 的个人主页**](https://www.aiyin.xyz)
+- [**Aiyin 的个人博客**](http://github.com/Aiyin5/personalIndex.git)
+- [**Aiyin 的个人主页**](http://www.aiyin.xyz)
 
 ## 关于艾因
 
