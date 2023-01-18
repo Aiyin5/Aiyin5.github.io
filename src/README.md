@@ -1,6 +1,6 @@
 ---
 home: true
-bgImage: test.gif
+bgImage: test3.gif
 bgImageStyle: {
   height: '420px'
 }
