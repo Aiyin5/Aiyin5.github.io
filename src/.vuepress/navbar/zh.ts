@@ -19,19 +19,14 @@ export const zhNavbar = navbar([
         prefix: "/关于厨师/",
         children: [
           {
-            text: "艾因家的菜",
+            text: "艾因家的菜谱",
             icon: "edit",
-            link: "艾因家的菜",
+            link: "艾因家的菜谱",
           },
           {
             text: "艾因家的甜品",
             icon: "edit",
             link: "艾因家的甜品",
-          },
-          {
-            text: "艾因家的特色",
-            icon: "edit",
-            link: "艾因家的特色",
           },
         ],
       },
