@@ -2,7 +2,7 @@
 home: true
 bgImage: test3.gif
 bgImageStyle: {
-  height: '420px'
+  height: '400px'
 }
 layout: BlogHome
 icon: home
