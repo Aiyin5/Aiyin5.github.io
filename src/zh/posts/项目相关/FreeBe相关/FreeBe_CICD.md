@@ -10,6 +10,7 @@ star: 5
 ---
 # 关于FreeBe的项目的CICD方案
 为了方便开发、测试和运维，这边建议采用两套服务器搭建开发环境和测试环境，采用GitHub作为代码托管，SonarCloud进行代码质量控制，DockerHub作为镜像托管，Git Action作为流水线控制，腾讯云作为服务器。
+这样每次开发完成代码更新，测试链接就可以实时展示更新后的产品，方便demo展示和进行测试。
 具体的流程如下面的流程图
 <iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;margin-left:10px; margin-top:10px;width:100%; height:400px;" src="https://www.processon.com/embed/63bff214261f1c5cc7947101"></iframe>
 
