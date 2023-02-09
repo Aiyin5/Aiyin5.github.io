@@ -39,10 +39,10 @@ export default hopeTheme({
       GitHub: "https://github.com/Aiyin5/",
       Linkedin: "https://www.linkedin.com/in/junkuiqiu",
       DockerHub:"https://www.linkedin.com/in/junkuiqiu",
-      Discord:"https://discord.gg/TG5ACprN",
+      Discord:"https://discord.gg/cK5Gbq6hsw",
       AiyinHome: [
         // 链接
-        "https://www.aiyin.xyz",
+        "http://www.aiyin.xyz",
         // 图标地址
         path.resolve(__dirname, "icons/aiyin.svg"),
       ],
