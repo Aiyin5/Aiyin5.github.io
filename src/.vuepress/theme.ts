@@ -1,6 +1,8 @@
 import { hopeTheme } from "vuepress-theme-hope";
+import { getDirname, path } from "@vuepress/utils";
 import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
+const __dirname = getDirname(import.meta.url);
 
 export default hopeTheme({
   hostname: "https://aiyin5.github.io",
@@ -36,7 +38,20 @@ export default hopeTheme({
       BiliBili: "https://space.bilibili.com/1320188",
       GitHub: "https://github.com/Aiyin5/",
       Linkedin: "https://www.linkedin.com/in/junkuiqiu",
-      LeetCode:"https://leetcode.cn/u/aiyin-v/",
+      DockerHub:"https://www.linkedin.com/in/junkuiqiu",
+      Discord:"https://discord.gg/TG5ACprN",
+      AiyinHome: [
+        // 链接
+        "https://www.aiyin.xyz",
+        // 图标地址
+        path.resolve(__dirname, "icons/aiyin.svg"),
+      ],
+      LeetCode: [
+        // 链接
+        "https://leetcode.cn/u/aiyin-v/",
+        // 图标地址
+        path.resolve(__dirname, "icons/leetcode.svg"),
+      ],
     },
   },
 

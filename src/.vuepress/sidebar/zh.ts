@@ -9,6 +9,5 @@ export const zhSidebar = sidebar({
       prefix: "zh/posts/",
       children: "structure",
     },
-    "slides",
   ],
 });
