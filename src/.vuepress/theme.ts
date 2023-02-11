@@ -24,7 +24,7 @@ export default hopeTheme({
 
   iconAssets: "iconfont",
 
-  logo: "/logo.png",
+  logo: "/rabbitMan.jpg",
 
   repo: "https://github.com/Aiyin5/Aiyin5.github.io",
 
@@ -33,7 +33,7 @@ export default hopeTheme({
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
   blog: {
-    avatar: "/logo.png",
+    avatar: "/rabbitMan.jpg",
     medias: {
       BiliBili: "https://space.bilibili.com/1320188",
       GitHub: "https://github.com/Aiyin5/",
@@ -72,7 +72,7 @@ export default hopeTheme({
 
       blog: {
         description: "全栈开发",
-        intro: "/zh/intro.html",
+        intro: "/zh/posts/关于艾因/关于艾因.html",
       },
 
       // page meta
