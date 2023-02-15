@@ -51,6 +51,6 @@ sticky: true
   margin-left:0px;
   margin-top:10px;
   width:100%; 
-  height:450px;
+  height:600px;
 }
 </style>
