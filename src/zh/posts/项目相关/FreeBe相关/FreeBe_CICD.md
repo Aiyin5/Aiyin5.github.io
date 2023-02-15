@@ -6,6 +6,7 @@ category:
 tag:
   - freebe
   - CICD
+sticky: true
 star: 5
 ---
 # 关于FreeBe的项目的CICD方案
