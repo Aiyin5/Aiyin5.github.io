@@ -60,6 +60,11 @@ export const zhNavbar = navbar([
         icon: "edit",
         link: "个人主页及博客",
       },
+      {
+        text: "DiscordBot Create",
+        icon: "edit",
+        link: "DiscordBot/DiscordBot实现方案",
+      },
     ],
   },
   {
