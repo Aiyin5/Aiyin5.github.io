@@ -10,7 +10,7 @@ tag:
 # 半年中我用AI做些什么
 在2023年的年初，我、五一和Ego一起参加了SeeDao的工作坊，为seedao打造一个基于Seedao数据的新人引导机器人，并拿到了二等奖。
 至此我们走上了AI应用的开发和学习的道路。下面是我和我的团队在这半年里面一起完成的关于AI应用相关的内容。
-关于大模型的一些基本概念可以看这个链接：
+关于大模型的一些基本概念可以看这个链接： [关于AI技术的分享](关于AI技术的分享)
 
 ## 文字推理及生成
 
@@ -37,7 +37,7 @@ Askio是我这半年里面最主要的项目，其本质是一个基于本地知
 功能介绍及演示视频：https://www.bilibili.com/video/BV1Zz4y1g77J
 Askio的国内官网：https://www.askio.xyz
 Askio的产品介绍图如下:
-![img.png](img.png)
+![Askio的产品介绍.png](/assets/photo/Askio的产品介绍.png)
 
 
 
@@ -47,7 +47,9 @@ Midjourney在参考CLIP及Diffusion开源模型的基础上，构建自己的垂
 MJ更像是众多sd模型的混合版本，根据提示词实现了模型风格，模型类型的自动选择。
 在图像生成的领域，我没有进行模型的微调和模型底层开发相关的经验，仅有使用SD的一些应用经验。
 简单的描述一下图像生成大模型的实现原理，以下是基于SD1.0和SD1.5版本的，近期SDXL的出现，其实现原理更复杂和精细。
-![img_1.png](img_1.png)
+
+![sd原理.png](/assets/photo/sd原理.png)
+
 其本质跟语言类的推理大模型是一样，是一个端到端的推理模型，只是输入的编码器和输出的解码器不一样。
 简单易懂的 Diffusion Model 解释：https://www.youtube.com/watch?v=1CIpzeNxIhU
 很棒的Stable Diffusion解释：https://jalammar.github.io/illustrated-stable-diffusion/
