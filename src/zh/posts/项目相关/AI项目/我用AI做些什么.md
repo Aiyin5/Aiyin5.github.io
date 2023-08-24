@@ -17,7 +17,7 @@ tag:
 
 在这半年中我尝试了各类大模型，包括文字、图像和语音。以下将从这几个方面介绍我对这些大模型的认知以及我和我的团队基于这些大模型实现的应用。
 
-这是一篇关于大模型应用和基础介绍的文章，因为我个人的水平和能力有限，会有很多内容出错或者表达偏差，欢迎指正。
+这是一篇关于大模型应用和基础介绍的文章，主要是介绍AI可以做一些什么，因为我个人的水平和能力有限，会有很多内容出错或者表达偏差，欢迎指正。
 
 ## 文字推理及生成
 
@@ -46,7 +46,7 @@ Askio是我这半年里面最主要的项目，其本质是一个基于本地知
 
 功能介绍及演示视频：https://www.bilibili.com/video/BV1Zz4y1g77J
 
-<video src="https://www.bilibili.com/video/BV1Zz4y1g77J" width="720" height="360" controls></video>
+<iframe src="//player.bilibili.com/player.html?aid=574779846&bvid=BV1Zz4y1g77J&cid=1235096034&page=1" width="720" height="360" frameborder="0" allowfullscreen></iframe>
 
 Askio的国内官网：https://www.askio.xyz
 
@@ -98,7 +98,7 @@ Maro(彭生)和我在最近的几个月里面，一直在研究AI视频制作，
 
 这是马克制作的第一个公开的AI视频 当一个铃铛说...点我：https://www.bilibili.com/video/BV1d94y1i7PA/
 
-<video src="https://www.bilibili.com/video/BV1d94y1i7PA/" width="720" height="360" controls></video>
+<iframe src="//player.bilibili.com/player.html?aid=361121856&bvid=BV1d94y1i7PA&cid=1201443045&page=1" width="720" height="360" frameborder="0" allowfullscreen></iframe>
 
 这是一个连续剧，下一集即将完成，同时剧情和技术也有了很大的提升。
 
@@ -110,6 +110,7 @@ Maro(彭生)和我在最近的几个月里面，一直在研究AI视频制作，
 这个demo是采用中文东北话生成的AI视频
 
 <video src="/assets/mp4/sadTalk2.mp4" width="360" height="360" controls></video>
+
 
 原始图像是通过SD生成
 
@@ -160,7 +161,7 @@ VCS（Voice Conversion System）是一种语音转换技术，它可以将一个
 我和我的团队在抖音上开发了一款小程序，可以实现语音对话功能，实现了数字人的一部分功能。
 demo如下：
 
-<video src="https://www.bilibili.com/video/BV1qu411H7Fm/" width="720" height="360" controls></video>
+<iframe src="//player.bilibili.com/player.html?aid=531743181&bvid=BV1qu411H7Fm&cid=1219778896&page=1" width="720" height="360" frameborder="0" allowfullscreen></iframe>
 
 其具体的实现逻辑如下：
 
@@ -179,4 +180,6 @@ demo如下：
 <video src="/assets/mp4/Digital_Human.mp4" width="720" height="360" controls></video>
 
 ## 最后
+
+技术的迭代日新月异，AI给了我们对无穷的想象力的实现能力，从始至终，我都认为AI是可以有效的提升工作和娱乐效率，虽然不一定是解放生产力，但肯定不是替代人类。
 
