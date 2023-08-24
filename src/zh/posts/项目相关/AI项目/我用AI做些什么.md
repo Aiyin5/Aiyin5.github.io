@@ -46,7 +46,7 @@ Askio是我这半年里面最主要的项目，其本质是一个基于本地知
 
 功能介绍及演示视频：https://www.bilibili.com/video/BV1Zz4y1g77J
 
-<iframe src="//player.bilibili.com/player.html?aid=574779846&bvid=BV1Zz4y1g77J&cid=1235096034&page=1" width="720" height="360" frameborder="0" allowfullscreen></iframe>
+<iframe src="//player.bilibili.com/player.html?aid=574779846&bvid=BV1Zz4y1g77J&cid=1235096034&page=1" width="85%" height="360" frameborder="0" allowfullscreen></iframe>
 
 Askio的国内官网：https://www.askio.xyz
 
@@ -98,7 +98,7 @@ Maro(彭生)和我在最近的几个月里面，一直在研究AI视频制作，
 
 这是马克制作的第一个公开的AI视频 当一个铃铛说...点我：https://www.bilibili.com/video/BV1d94y1i7PA/
 
-<iframe src="//player.bilibili.com/player.html?aid=361121856&bvid=BV1d94y1i7PA&cid=1201443045&page=1" width="720" height="360" frameborder="0" allowfullscreen></iframe>
+<iframe src="//player.bilibili.com/player.html?aid=361121856&bvid=BV1d94y1i7PA&cid=1201443045&page=1" width="85%" height="360" frameborder="0" allowfullscreen></iframe>
 
 这是一个连续剧，下一集即将完成，同时剧情和技术也有了很大的提升。
 
@@ -158,7 +158,7 @@ VCS（Voice Conversion System）是一种语音转换技术，它可以将一个
 我和我的团队在抖音上开发了一款小程序，可以实现语音对话功能，实现了数字人的一部分功能。
 demo如下：
 
-<iframe src="//player.bilibili.com/player.html?aid=531743181&bvid=BV1qu411H7Fm&cid=1219778896&page=1" width="720" height="360" frameborder="0" allowfullscreen></iframe>
+<iframe src="//player.bilibili.com/player.html?aid=531743181&bvid=BV1qu411H7Fm&cid=1219778896&page=1" width="85%" height="360" frameborder="0" allowfullscreen></iframe>
 
 其具体的实现逻辑如下：
 
@@ -174,7 +174,7 @@ demo如下：
 #### 基于Unity的数字人构建
 下面这个demo是通过unity和gpt实现的数字人
 
-<video src="/assets/mp4/Digital_Human.mp4" width="720" height="360" controls></video>
+<video src="/assets/mp4/Digital_Human.mp4" width="85%" height="360" controls></video>
 
 ## 最后
 
