@@ -91,12 +91,12 @@ MJ更像是众多sd模型的混合版本，根据提示词实现了模型风格�
 
 ### 基于SD的AI视频制作
 
-Maro(彭生)和我在最近的几个月里面，一直在研究AI视频制作，采用了很多方法和尝试。
+Marco(彭生)和我在最近的几个月里面，一直在研究AI视频制作，采用了很多方法和尝试。
 在AI视频生成和制作中，我认为最难和最复杂的和正常拍视频是一样的，是想法和脚本构思，其次是AI如何配合这些想法和剧情脚本，包括后期如何让AI视频不闪之类的。
 
 ### AI视频的展示
 
-这是马克制作的第一个公开的AI视频 当一个铃铛说...点我：https://www.bilibili.com/video/BV1d94y1i7PA/
+这是Marco制作的第一个公开的AI视频 当一个铃铛说...点我：https://www.bilibili.com/video/BV1d94y1i7PA/
 
 <iframe src="//player.bilibili.com/player.html?aid=361121856&bvid=BV1d94y1i7PA&cid=1201443045&page=1" width="85%" height="360" frameborder="0" allowfullscreen></iframe>
 
