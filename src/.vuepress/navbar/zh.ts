@@ -61,6 +61,11 @@ export const zhNavbar = navbar([
         link: "个人主页及博客",
       },
       {
+        text: "AI项目相关",
+        icon: "edit",
+        link: "AI项目/我用AI做些什么",
+      },
+      {
         text: "DiscordBot Create",
         icon: "edit",
         link: "DiscordBot/DiscordBot实现方案",
